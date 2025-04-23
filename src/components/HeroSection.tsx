@@ -35,7 +35,7 @@ const HeroSection = () => {
           <div className="space-y-2">
             <h2 className="text-xl font-medium text-primary">Hello, my name is</h2>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-              John Doe
+              Sam
             </h1>
             <div className="h-16 my-4">
               <TypewriterEffect words={roles.map(role => ({ text: role.text }))} />
