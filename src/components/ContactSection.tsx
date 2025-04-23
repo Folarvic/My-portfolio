@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
-import { Mail, Github, Linkedin, ExternalLink } from "lucide-react";
+import { Mail, Github, Linkedin, ExternalLink, Whatsapp } from "lucide-react";
 
 const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -98,16 +98,43 @@ const ContactSection = () => {
               </p>
               
               <div className="space-y-3 pt-2">
+                {/* Email */}
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                     <Mail className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium">developer@example.com</p>
+                    <a
+                      href="mailto:samfolarvic@gmail.com"
+                      className="font-medium hover:text-primary flex items-center gap-1"
+                    >
+                      samfolarvic@gmail.com
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </div>
+                </div>
+
+                {/* WhatsApp */}
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Whatsapp className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">WhatsApp</p>
+                    <a
+                      href="https://wa.me/2349128279333"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium hover:text-primary flex items-center gap-1"
+                    >
+                      Chat on WhatsApp
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
                   </div>
                 </div>
                 
+                {/* GitHub */}
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                     <Github className="h-5 w-5 text-primary" />
@@ -126,6 +153,7 @@ const ContactSection = () => {
                   </div>
                 </div>
                 
+                {/* LinkedIn */}
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                     <Linkedin className="h-5 w-5 text-primary" />
@@ -175,3 +203,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
