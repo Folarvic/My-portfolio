@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Monitor, User, Code, Github, Mail } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const NavBar = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -91,15 +92,18 @@ const NavBar = () => {
           </ul>
         </nav>
         
-        <a 
-          href="https://github.com" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="p-2 rounded-full hover:bg-accent transition-colors"
-          aria-label="GitHub Profile"
-        >
-          <Github className="h-5 w-5" />
-        </a>
+        <div className="flex items-center gap-4">
+          <ThemeToggle />
+          <a 
+            href="https://github.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="p-2 rounded-full hover:bg-accent transition-colors"
+            aria-label="GitHub Profile"
+          >
+            <Github className="h-5 w-5" />
+          </a>
+        </div>
       </div>
     </header>
   );
