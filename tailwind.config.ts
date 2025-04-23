@@ -52,6 +52,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				codeblue: '#8B5CF6',
+				codegreen: '#10B981',
+				codepurple: '#8B5CF6',
+				codered: '#EF4444',
+				codeyellow: '#F59E0B',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +89,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'blink': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'blink': 'blink 1s linear infinite'
 			}
 		}
 	},
