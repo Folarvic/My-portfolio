@@ -1,9 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
-import { Mail, Github, Linkedin, ExternalLink, Whatsapp } from "lucide-react";
+import { Mail, Github, Linkedin, ExternalLink, MessageSquare, Phone } from "lucide-react";
 
 const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -118,7 +117,7 @@ const ContactSection = () => {
                 {/* WhatsApp */}
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Whatsapp className="h-5 w-5 text-primary" />
+                    <Phone className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">WhatsApp</p>
@@ -203,4 +202,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-
