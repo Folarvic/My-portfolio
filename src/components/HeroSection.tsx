@@ -74,31 +74,23 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        
-      
 
-
-          <div className="hidden md:flex justify-center items-center fade-in">  
-            <div className="relative">  
-              <div className="w-64 h-64 bg-muted rounded-full overflow-hidden flex justify-center items-center pulse-glow">  
-                {/* Image container - maintains circle shape */}  
-                <div className="w-40 h-40 rounded-full overflow-hidden">  
-                  <img   
-                    src="/lovable-uploads/1069.png"  // Replace with your image path  
-                    alt="Profile"   
-                    className="w-full h-full object-cover"  // Ensures image fills circle  
-                  />  
-                </div>  
-              </div>  
-              <div className="absolute -bottom-4 -right-4 bg-card p-4 rounded-lg shadow-lg border border-border">  
-                <Code className="h-8 w-8 text-primary" />  
+        <div className="hidden md:flex justify-center items-center fade-in">  
+          <div className="relative">  
+            <div className="w-64 h-64 bg-muted rounded-full overflow-hidden flex justify-center items-center pulse-glow">  
+              {/* Image container - maintains circle shape */}  
+              <div className="w-40 h-40 rounded-full overflow-hidden">  
+                <img   
+                  src="/lovable-uploads/1069.png"
+                  alt="Profile"   
+                  className="w-full h-full object-cover"
+                />  
               </div>  
             </div>  
+            <div className="absolute -bottom-4 -right-4 bg-card p-4 rounded-lg shadow-lg border border-border">  
+              <Code className="h-8 w-8 text-primary" />  
+            </div>  
           </div>  
-
-
-            </div>
-          </div>
         </div>
       </div>
     </section>
