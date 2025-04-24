@@ -75,18 +75,7 @@ const HeroSection = () => {
           </div>
         </div>
         
-        <div className="hidden md:flex justify-center items-center fade-in">
-          <div className="relative">
-            <div className="w-64 h-64 bg-muted rounded-full overflow-hidden flex justify-center items-end pulse-glow">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="w-40 h-40 text-primary opacity-90">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-              </svg>
-            </div>
-            <div className="absolute -bottom-4 -right-4 bg-card p-4 rounded-lg shadow-lg border border-border">
-              <Code className="h-8 w-8 text-primary" />
+      
 
 
           <div className="hidden md:flex justify-center items-center fade-in">  
@@ -95,7 +84,7 @@ const HeroSection = () => {
                 {/* Image container - maintains circle shape */}  
                 <div className="w-40 h-40 rounded-full overflow-hidden">  
                   <img   
-                    src="public/image.png"  // Replace with your image path  
+                    src="/lovable-uploads/image.png"  // Replace with your image path  
                     alt="Profile"   
                     className="w-full h-full object-cover"  // Ensures image fills circle  
                   />  
