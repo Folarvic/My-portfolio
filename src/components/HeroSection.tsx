@@ -84,7 +84,7 @@ const HeroSection = () => {
                 {/* Image container - maintains circle shape */}  
                 <div className="w-40 h-40 rounded-full overflow-hidden">  
                   <img   
-                    src="/lovable-uploads/image.png"  // Replace with your image path  
+                    src="/lovable-uploads/1069.png"  // Replace with your image path  
                     alt="Profile"   
                     className="w-full h-full object-cover"  // Ensures image fills circle  
                   />  
